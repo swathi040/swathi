@@ -1,0 +1,502 @@
+{
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/swathi040/swathi/blob/main/python%201%202%203%20programs\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 8,
+      "metadata": {
+        "id": "zwFnJsE6vjf8",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "82bca460-1d78-48b8-fed8-a6a2df6825db"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter a string: SWATHI NIMMA\n",
+            "The number of vowels in the string is: 5\n"
+          ]
+        }
+      ],
+      "source": [
+        "Input_string = input(\"Enter a string: \")\n",
+        "\n",
+        "# Define a set of vowels\n",
+        "vowels = {'a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'}\n",
+        "\n",
+        "# Use a set to count the vowels in the string\n",
+        "count = 0\n",
+        "for char in input_string:\n",
+        "    if char in vowels:\n",
+        "        count += 1\n",
+        "\n",
+        "# Display the result\n",
+        "print(f\"The number of vowels in the string is: {count}\")\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "User_input = input(\"Enter a list of numbers separated by spaces: \")\n",
+        "user_list = list(map(int, user_input.split()))\n",
+        "\n",
+        "# 1. len() - Find the length of the list\n",
+        "length = len(user_list)\n",
+        "print(f\"Length of the list: {length}\")\n",
+        "\n",
+        "# 2. sum() - Find the sum of elements in the list\n",
+        "total_sum = sum(user_list)\n",
+        "print(f\"Sum of all elements: {total_sum}\")\n",
+        "\n",
+        "# 3. max() - Find the largest element in the list\n",
+        "largest = max(user_list)\n",
+        "print(f\"Largest element: {largest}\")\n",
+        "\n",
+        "# 4. min() - Find the smallest element in the list\n",
+        "smallest = min(user_list)\n",
+        "print(f\"Smallest element: {smallest}\")\n",
+        "\n",
+        "# 5. sorted() - Sort the list in ascending order\n",
+        "sorted_list = sorted(user_list)\n",
+        "print(f\"Sorted list: {sorted_list}\")\n"
+      ],
+      "metadata": {
+        "id": "y-rK38DfoK3T",
+        "outputId": "e2e5674e-0ae8-4835-f71a-50a21de4d599",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": 7,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter a list of numbers separated by spaces: 2 6 10 4 2005\n",
+            "Length of the list: 5\n",
+            "Sum of all elements: 2027\n",
+            "Largest element: 2005\n",
+            "Smallest element: 2\n",
+            "Sorted list: [2, 4, 6, 10, 2005]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "name1 = input(\"Enter the name of the first person: \")\n",
+        "age1 = int(input(\"Enter the age of the first person: \"))\n",
+        "address1 = input(\"Enter the address of the first person: \")\n",
+        "college1 = input(\"Enter the college of the first person: \")\n",
+        "\n",
+        "# Creating the tuple for the first person\n",
+        "person1 = (name1, age1, address1, college1)\n",
+        "\n",
+        "# Input for the second person\n",
+        "name2 = input(\"\\nEnter the name of the second person: \")\n",
+        "age2 = int(input(\"Enter the age of the second person: \"))\n",
+        "address2 = input(\"Enter the address of the second person: \")\n",
+        "college2 = input(\"Enter the college of the second person: \")\n",
+        "\n",
+        "# Creating the tuple for the second person\n",
+        "person2 = (name2, age2, address2, college2)\n",
+        "\n",
+        "# Display the tuples\n",
+        "print(\"\\nDetails of the first person:\", person1)\n",
+        "print(\"Details of the second person:\", person2)"
+      ],
+      "metadata": {
+        "id": "YXQpMyCrpS10",
+        "outputId": "f051130d-f42e-4d81-88b3-3ee7fb97cdfb",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": 6,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter the name of the first person: SWATHI\n",
+            "Enter the age of the first person: 18\n",
+            "Enter the address of the first person: JAGADAMBA\n",
+            "Enter the college of the first person: GVPCE\n",
+            "\n",
+            "Enter the name of the second person: PRASANNA\n",
+            "Enter the age of the second person: 18\n",
+            "Enter the address of the second person: VEPAGUNTA\n",
+            "Enter the college of the second person: LENDI\n",
+            "\n",
+            "Details of the first person: ('SWATHI', 18, 'JAGADAMBA', 'GVPCE')\n",
+            "Details of the second person: ('PRASANNA', 18, 'VEPAGUNTA', 'LENDI')\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "name1 = input(\"Enter the name of the first person: \")\n",
+        "age1 = int(input(\"Enter the age of the first person: \"))\n",
+        "address1 = input(\"Enter the address of the first person: \")\n",
+        "college1 = input(\"Enter the college of the first person: \")\n",
+        "\n",
+        "# Creating the tuple for the first person\n",
+        "person1 = (name1, age1, address1, college1)\n",
+        "\n",
+        "# Input for the second person\n",
+        "name2 = input(\"\\nEnter the name of the second person: \")\n",
+        "age2 = int(input(\"Enter the age of the second person: \"))\n",
+        "address2 = input(\"Enter the address of the second person: \")\n",
+        "college2 = input(\"Enter the college of the second person: \")\n",
+        "\n",
+        "# Creating the tuple for the second person\n",
+        "person2 = (name2, age2, address2, college2)\n",
+        "\n",
+        "# Concatenating the tuples\n",
+        "concatenated_tuple = person1 + person2\n",
+        "\n",
+        "# Displaying the tuples and the concatenated tuple\n",
+        "print(\"\\nDetails of the first person:\", person1)\n",
+        "print(\"Details of the second person:\", person2)\n",
+        "print(\"Concatenated tuple:\", concatenated_tuple)\n"
+      ],
+      "metadata": {
+        "id": "5CI7o7-hrFUG",
+        "outputId": "4fe4c1aa-3b11-45e7-abef-2e7bfdb353f5",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": 10,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter the name of the first person: BHAGYA\n",
+            "Enter the age of the first person: 17\n",
+            "Enter the address of the first person: SRIKALU;AM\n",
+            "Enter the college of the first person: GOVERNMENT COLLEGE\n",
+            "\n",
+            "Enter the name of the second person: SWATHI\n",
+            "Enter the age of the second person: 18\n",
+            "Enter the address of the second person: VIZAG\n",
+            "Enter the college of the second person: PRIVATE COLLEGE\n",
+            "\n",
+            "Details of the first person: ('BHAGYA', 17, 'SRIKALU;AM', 'GOVERNMENT COLLEGE')\n",
+            "Details of the second person: ('SWATHI', 18, 'VIZAG', 'PRIVATE COLLEGE')\n",
+            "Concatenated tuple: ('BHAGYA', 17, 'SRIKALU;AM', 'GOVERNMENT COLLEGE', 'SWATHI', 18, 'VIZAG', 'PRIVATE COLLEGE')\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "my_dict = {\n",
+        "    \"name\": \"Alice\",\n",
+        "    \"age\": 25,\n",
+        "    \"city\": \"New York\"\n",
+        "}\n",
+        "\n",
+        "# Display the initial dictionary\n",
+        "print(\"Initial dictionary:\", my_dict)\n",
+        "\n",
+        "# Input new key and value from the user\n",
+        "new_key = input(\"\\nEnter the new key: \")\n",
+        "new_value = input(\"Enter the value for the new key: \")\n",
+        "\n",
+        "# Add the new key-value pair to the dictionary\n",
+        "my_dict[new_key] = new_value\n",
+        "\n",
+        "# Display the updated dictionary\n",
+        "print(\"\\nUpdated dictionary:\", my_dict)"
+      ],
+      "metadata": {
+        "id": "8mamkMhMri9p",
+        "outputId": "0290d293-8335-4afc-f2cd-e2a5d682675e",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": 11,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Initial dictionary: {'name': 'Alice', 'age': 25, 'city': 'New York'}\n",
+            "\n",
+            "Enter the new key: profession\n",
+            "Enter the value for the new key: engineer\n",
+            "\n",
+            "Updated dictionary: {'name': 'Alice', 'age': 25, 'city': 'New York', 'profession': 'engineer'}\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def is_prime(num):\n",
+        "    if num < 2:\n",
+        "        return False\n",
+        "    for i in range(2, int(num ** 0.5) + 1):\n",
+        "        if num % i == 0:\n",
+        "            return False\n",
+        "    return True\n",
+        "\n",
+        "# List to store prime numbers\n",
+        "prime_numbers = []\n",
+        "\n",
+        "# Find prime numbers in the range 20 to 50\n",
+        "for number in range(20, 51):\n",
+        "    if is_prime(number):\n",
+        "        prime_numbers.append(number)\n",
+        "\n",
+        "# Display the prime numbers\n",
+        "print(\"Prime numbers between 20 and 50:\", prime_numbers)"
+      ],
+      "metadata": {
+        "id": "mauGtm7_sN9D",
+        "outputId": "6c621b5f-f3c2-4ff0-f38f-e75736061369",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": 12,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Prime numbers between 20 and 50: [23, 29, 31, 37, 41, 43, 47]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def create_adder(value):\n",
+        "    # Return a lambda function that adds 'value' to its argument\n",
+        "    return lambda x: x + value\n",
+        "\n",
+        "# Input a value for the adder\n",
+        "adder_value = int(input(\"Enter the value to create the adder: \"))\n",
+        "\n",
+        "# Create the adder function\n",
+        "adder = create_aesult}\")"
+      ],
+      "metadata": {
+        "id": "yyEJ0adcsXLA",
+        "outputId": "40eef846-1f4c-4519-8d88-fcc8376d5aa5",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": 14,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter the value to create the adder: 10\n",
+            "Enter a number to add to the adder: 4\n",
+            "The result of adding 10 to 4 is: 14\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def find_maximum(a=0, b=0, c=0):\n",
+        "    return max(a, b, c)\n",
+        "\n",
+        "# Example usage of the function\n",
+        "# Input from the user\n",
+        "num1 = int(input(\"Enter the first number (or press Enter to use default 0): \") or 0)\n",
+        "num2 = int(input(\"Enter the second number (or press Enter to use default 0): \") or 0)\n",
+        "num3 = int(input(\"Enter the third number (or press Enter to use default 0): \") or 0)\n",
+        "\n",
+        "# Find the maximum of the three numbers\n",
+        "result = find_maximum(num1, num2, num3)\n",
+        "\n",
+        "# Display the result\n",
+        "print(f\"The maximum of the numbers is: {result}\")"
+      ],
+      "metadata": {
+        "id": "Ms5dd0Y4st6f",
+        "outputId": "96404a73-3151-4111-dec6-72fdd32b2fbf",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": 15,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter the first number (or press Enter to use default 0): 2000\n",
+            "Enter the second number (or press Enter to use default 0): 2005\n",
+            "Enter the third number (or press Enter to use default 0): 2008\n",
+            "The maximum of the numbers is: 2008\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def find_maximum(a, b, c=0):\n",
+        "    \"\"\"\n",
+        "    Find the maximum of three numbers.\n",
+        "    The third number has a default value of 0.\n",
+        "    \"\"\"\n",
+        "    return max(a, b, c)\n",
+        "\n",
+        "# Example usage of the function\n",
+        "# Input from the user\n",
+        "num1 = int(input(\"Enter the first number: \"))\n",
+        "num2 = int(input(\"Enter the second number: \"))\n",
+        "num3 = input(\"Enter the third number (or press Enter to use default 0): \")\n",
+        "\n",
+        "# Convert third input to integer or use the default value\n",
+        "num3 = int(num3) if num3 else 0\n",
+        "\n",
+        "# Call the function with the inputs\n",
+        "result = find_maximum(num1, num2, num3)\n",
+        "\n",
+        "# Display the result\n",
+        "print(f\"The maximum of the numbers is: {result}\")\n"
+      ],
+      "metadata": {
+        "id": "so7VoyGntDgV",
+        "outputId": "42a9234b-3050-479c-bf1e-2fef5d1b4154",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": 16,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter the first number: 15\n",
+            "Enter the second number: 24\n",
+            "Enter the third number (or press Enter to use default 0): 40\n",
+            "The maximum of the numbers is: 40\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Input two matrices from the user\n",
+        "rows = int(input(\"Enter the number of rows: \"))\n",
+        "cols = int(input(\"Enter the number of columns: \"))\n",
+        "\n",
+        "print(\"\\nEnter the elements of the first matrix:\")\n",
+        "matrix1 = Any.array([[int(input(f\"Element ({i+1},{j+1}): \")) for j in range(cols)] for i in range(rows)])\n",
+        "\n",
+        "print(\"\\nEnter the elements of the second matrix:\")\n",
+        "matrix2 = Any2.array([[int(input(f\"Element ({i+1},{j+1}): \")) for j in range(cols)] for i in range(rows)])\n",
+        "\n",
+        "# Add the two matrices\n",
+        "matrix_sum = matrix1 + matrix2\n",
+        "\n",
+        "# Transpose of both matrices\n",
+        "transpose_matrix1 = matrix1.T\n",
+        "transpose_matrix2 = matrix2.T\n",
+        "\n",
+        "# Multiply the two matrices\n",
+        "matrix_product = np.dot(matrix1, matrix2.T)  # Transpose second matrix for compatibility\n",
+        "\n",
+        "# Display the results\n",
+        "print(\"\\nFirst Matrix:\")\n",
+        "print(matrix1)\n",
+        "\n",
+        "print(\"\\nSecond Matrix:\")\n",
+        "print(matrix2)\n",
+        "\n",
+        "print(\"\\nSum of the two matrices:\")\n",
+        "print(matrix_sum)\n",
+        "\n",
+        "print(\"\\nTranspose of the first matrix:\")\n",
+        "print(transpose_matrix1)\n",
+        "\n",
+        "print(\"\\nTranspose of the second matrix:\")\n",
+        "print(transpose_matrix2)\n",
+        "\n",
+        "print(\"\\nProduct of the two matrices:\")\n",
+        "print(matrix_product)"
+      ],
+      "metadata": {
+        "id": "yWle0kbQuDX6",
+        "outputId": "b8348ca9-e272-4e3b-d49f-c2c5236bbe6d",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 297
+        }
+      },
+      "execution_count": 21,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter the number of rows: 2\n",
+            "Enter the number of columns: 2\n",
+            "\n",
+            "Enter the elements of the first matrix:\n"
+          ]
+        },
+        {
+          "output_type": "error",
+          "ename": "NameError",
+          "evalue": "name 'Any' is not defined",
+          "traceback": [
+            "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+            "\u001b[0;31mNameError\u001b[0m                                 Traceback (most recent call last)",
+            "\u001b[0;32m<ipython-input-21-70745f1e9f7a>\u001b[0m in \u001b[0;36m<cell line: 0>\u001b[0;34m()\u001b[0m\n\u001b[1;32m      4\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      5\u001b[0m \u001b[0mprint\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m\"\\nEnter the elements of the first matrix:\"\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m----> 6\u001b[0;31m \u001b[0mmatrix1\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mAny\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0marray\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m[\u001b[0m\u001b[0;34m[\u001b[0m\u001b[0mint\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0minput\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34mf\"Element ({i+1},{j+1}): \"\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m)\u001b[0m \u001b[0;32mfor\u001b[0m \u001b[0mj\u001b[0m \u001b[0;32min\u001b[0m \u001b[0mrange\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mcols\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m]\u001b[0m \u001b[0;32mfor\u001b[0m \u001b[0mi\u001b[0m \u001b[0;32min\u001b[0m \u001b[0mrange\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mrows\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m]\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m      7\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      8\u001b[0m \u001b[0mprint\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m\"\\nEnter the elements of the second matrix:\"\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;31mNameError\u001b[0m: name 'Any' is not defined"
+          ]
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "colab": {
+      "name": "Welcome To Colab",
+      "toc_visible": true,
+      "provenance": [],
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "display_name": "Python 3",
+      "name": "python3"
+    }
+  },
+  "nbformat": 4,
+  "nbformat_minor": 0
+}
